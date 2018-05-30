@@ -61,6 +61,9 @@ public class ATM {
                             return true;
                         }
                     } while(dummyAmount >= currentBill && bills.getNoOfBills().get(i) > 0);
+                } else {
+                    System.out.println("Cannot withdraw. Remaining cash is insufficient.");
+                    return false;
                 }
             }
             if(dummyAmount > 0) {
